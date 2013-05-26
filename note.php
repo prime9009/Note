@@ -19,7 +19,7 @@ header('Content-type: text/html; charset=utf-8');
 </head>
 <body>
 <?php
-<body background="seryy-fon.jpg">
+<body background='seryy-fon.jpg'>
 
 Введите ФИО:
 <input type="text" name = "name" size="50" /><br /><br />
@@ -170,7 +170,7 @@ header('Content-type: text/html; charset=utf-8');
 
 
 Выберите город:
-<select name="Horoda">
+<select name="Goroda">
 <option selected value="Kyiv">Киев</option>
 <option value="Lvov">Львов</option>
 <option value="Harkov">Харьков</option>
@@ -188,7 +188,7 @@ header('Content-type: text/html; charset=utf-8');
 <br><br />
 
 Введите адресс доставки<br />
-<input type="text" name = "adres" size="50" /><br /><br />
+<input type="text" name = "adress" size="50" /><br /><br />
 
 
 
