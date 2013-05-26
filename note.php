@@ -1,8 +1,11 @@
+<?php
+header('Content-type: text/html; charset=utf-8');
+?>
 <html>
 <head>
-
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<script language="JavaScript">
+</head>
+
 
 
 <H1>
@@ -15,7 +18,7 @@
 
 </head>
 <body>
-
+<?php
 <body background="seryy-fon.jpg">
 
 Введите ФИО:
@@ -30,7 +33,7 @@
 <table>
 <tr>
     <td>
-  <input  type="radio" name="Firma" value="1" checked><b>Asus <U>Цены: <br> от 17364 до 21435</U></b>
+	<input  type="radio" name="Firma" value="1" checked><b>Asus <U>Цены: <br> от 17364 до 21435</U></b>
 	</td>
     <td>
 	<img src="asus.jpg" align="left" width="220" height="150" hspace="45" style="float: left; margin-right: 5px; margin-bottom: 0px;" alt="ASUS Corporation">
@@ -312,6 +315,6 @@ alert();
 <input type="reset" value="Отмена ">
 </p>
 </form>
-
+?>
 </body>
 </html>
