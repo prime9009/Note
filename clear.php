@@ -34,13 +34,13 @@ if(!$r)
 echo mysql_error();
 }
 
- $r=mysql_query("CREATE TABLE IF NOT EXISTS `testbd` (  `name` text NOT NULL,  `tel` int NOT NULL,`adress` text NOT NULL, `Goroda` text NOT NULL, `kilkist` int NOT NULL,  `result` int NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=latin1;");
+ $r=mysql_query("CREATE TABLE IF NOT EXISTS `testbd` (  `name` text NOT NULL,  `Firma` text NOT NULL, `ScreenSize` text NOT NULL, `colour` text NOT NULL, `tel` int NOT NULL,`adress` text NOT NULL, `Goroda` text NOT NULL, `kilkist` int NOT NULL,  `result` int NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=latin1;");
 if(!$r)
 { echo "Error !<br>";
 echo mysql_error();
 }
 
- $r=mysql_query("INSERT INTO `testbd` (`name`,  `tel` ,`adress`, `Goroda` , `kilkist`,  `result` ) VALUES ('', '100','','', '100', '100'),('', '100','','', '100', '100');");
+ $r=mysql_query("INSERT INTO `testbd` (`name`, Firma, ScreenSize, colour, `tel` ,`adress`, `Goroda` , `kilkist`,  `result` ) VALUES ('', '100','','', '100', '100'),('', '100','','', '100', '100');");
 if(!$r)
 { echo "Error !<br>";
 echo mysql_error();
