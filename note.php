@@ -206,7 +206,7 @@ document.forms[0].tsina.value;
 var tsina=parseFloat(document.myform.tsina.value);
 var kilkist=parseFloat(document.myform.kilkist.value);
 
-document.myform.result.value=document.myform.result.value+"\n"+"Общая сумма получается вот такая ="+(tsina*kilkist+300);
+document.myform.result.value=document.myform.result.value+"Общая сумма получается вот такая ="+(tsina*kilkist+300);
 
 if (document.myform.check1.checked)
 alert();
