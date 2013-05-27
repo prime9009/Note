@@ -18,7 +18,7 @@ echo "Количество(штук)=$kilkist <br>"; //kilkist
 $result=$_REQUEST['result'];
 echo "Результат=$result <br>"; // text rozrahunka
 $fp=fopen("zam.txt","a");
-fputs($fp,"$name\t$tel\t$adress\t$Firma\t$ScreenSize\t$Goroda\t$colour\t$kilkist\t$result\t");
+fputs($fp,"$name\t$tel\t$adress\t$Firma\t$ScreenSize\t$Goroda\t$colour\t$kilkist\t$result\n");
 fclose($fp);
 ?>
 
