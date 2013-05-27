@@ -1,19 +1,29 @@
 <?php
 $name=$_REQUEST['name'];
-echo "name=$name <br>"; //imya
+echo "ФИО=$name <br>"; //imya
+$colour=$_REQUEST['colour'];
+echo "Цвет=$colour <br>"; //colour
+$Firma=$_REQUEST['Firma'];
+echo "Фирма=$Firma <br>"; //Firma
+$ScreenSize=$_REQUEST['ScreenSize'];
+echo "Размер дисплея=$ScreenSize <br>"; //ScreenSize
 $tel=$_REQUEST['tel'];
-echo "tel=$tel <br>"; //telephone
+echo "Телефон=$tel <br>"; //telephone
 $adress=$_REQUEST['adress'];
-echo "adress=$adress <br>"; //telephone
+echo "Адресс=$adress <br>"; //telephone
 $Goroda=$_REQUEST['Goroda'];
-echo "Goroda=$Goroda <br>"; //misto
+echo "Город=$Goroda <br>"; //misto
 $kilkist=$_REQUEST['kilkist'];
-echo "kilkist=$kilkist <br>"; //kilkist
-$note=$_REQUEST['note'];
-echo "note=$note <br>"; //typ note
+echo "Количество(штук)=$kilkist <br>"; //kilkist
 $result=$_REQUEST['result'];
-echo "result=$result <br>"; // text rozrahunka
+echo "Результат=$result <br>"; // text rozrahunka
 $fp=fopen("zam.txt","a");
-fputs($fp,"$name\t$tel\t$adress\t$Goroda\t$kilkist\t$result\t");
+fputs($fp,"$name\t$tel\t$adress\t$Firma\t$ScreenSize\t$Goroda\t$colour\t$kilkist\t$result\t");
 fclose($fp);
 ?>
+
+
+
+
+
+
